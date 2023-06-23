@@ -87,11 +87,11 @@ function Home() {
 
                   <button
                     onClick={() => {
-                      const newTodos = todos.map((item) => {
-                        if (item.id === data.id) {
-                          return { ...item, isDone: !item.isDone };
+                      const newTodos = todos.map((todo) => {
+                        if (todo.id === item.id) {
+                          return { ...todo, isDone: !todo.isDone };
                         } else {
-                          return item;
+                          return todo;
                         }
                       });
                       setTodos(newTodos);
@@ -101,8 +101,8 @@ function Home() {
                   </button>
                   <button
                     onClick={() => {
-                      const delTodos = todos.filter((item) => {
-                        return item.id !== data.id;
+                      const delTodos = todos.filter((todo) => {
+                        return todo.id !== item.id;
                       });
                       setTodos(delTodos);
                     }}
@@ -130,11 +130,11 @@ function Home() {
 
                   <button
                     onClick={() => {
-                      const newTodos = todos.map((item) => {
-                        if (item.id === data.id) {
-                          return { ...item, isDone: !item.isDone };
+                      const newTodos = todos.map((todo) => {
+                        if (todo.id === item.id) {
+                          return { ...todo, isDone: !todo.isDone };
                         } else {
-                          return item;
+                          return todo;
                         }
                       });
                       setTodos(newTodos);
@@ -144,8 +144,8 @@ function Home() {
                   </button>
                   <button
                     onClick={() => {
-                      const delTodos = todos.filter((item) => {
-                        return item.id !== data.id;
+                      const delTodos = todos.filter((todo) => {
+                        return todo.id !== item.id;
                       });
                       setTodos(delTodos);
                     }}
